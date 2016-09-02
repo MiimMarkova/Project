@@ -1,0 +1,16 @@
+/*-------------------------------------NAVBAR------------------------------------------------>*/
+
+.navbar {
+	background-color: #fff;
+	width: 100%;
+	text-align: center;
+	
+	ul {
+		@include linkState($unactiveColor,  $activeColor);
+		li{
+		display: inline;
+		margin: 0 30px;
+		@extend %links;
+		}
+	}
+}
